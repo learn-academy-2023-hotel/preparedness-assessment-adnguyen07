@@ -1,0 +1,38 @@
+body {
+    background-image: url("../src/assets/background-image.jpeg");
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-size: 35px;
+}
+
+.input {
+    text-align: center;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 6px 12px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.each-button {
+    background-color: #0dcaf0 !important;
+    width: 100px !important;
+    padding: 10px !important;
+    margin: 20px 10px;
+}
