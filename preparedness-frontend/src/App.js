@@ -11,16 +11,22 @@ const App = () => {
 
   const [name, setName] = useState("")
 
+  const reset = () => {
+    setName("")
+  }
+
   return (
     <div className="entire-content">
-      <h1>Preparedness Assessment</h1>
+      <h1 className="title">Preparedness Assessment</h1>
       <div className="form">
         <div className="input">
           <Label for="name">Enter your name</Label>
-          <Input value={name} onChange={e => setName(e.target.value)}/>
+          <Input type="text" value={name} onChange={e => setName(e.target.value)}/>
         </div>
-        <Button onClick={toggle}>Click Me</Button>
-        <Button>Reset</Button>
+        <div className="buttons">
+        <Button className="each-button" onClick={toggle}>Click Me</Button>
+        <Button className="each-button" onClick={reset}>Reset</Button>
+        </div>
         <ModalComponent modal={modal} toggle={toggle} name={name}/>
       </div>
     </div>
